@@ -12,6 +12,7 @@ div.container {
   border-radius: 10px;
   width: 100px;
   transition: 0.5s;
+  position: relative;
 }
 
 .box:nth-child(odd) {
@@ -33,11 +34,22 @@ footer {
 }
 
 .label {
-  display: none;
+  font-family: 'Oxygen Mono', monospace;
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  border: 2px solid #ddffff;
+  border-radius: 5px;
+  background: #ffffee;
+  font-size: 2em;
+  opacity: 0;
   transition: 0.5s;
+  transform: 0.5s;
 }
 
 .label_show {
-  display: block;
+  opacity: 1;
+  top: 100px;
+  left: 150px;
 }
 
