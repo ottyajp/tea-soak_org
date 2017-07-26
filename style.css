@@ -10,7 +10,7 @@ div.container {
   margin: 30px;
   background: #aaaaff;
   border-radius: 10px;
-  width: 10vw;
+  width: 100px;
   transition: 0.5s;
 }
 
@@ -22,7 +22,7 @@ div.container {
 }
 
 .box:hover {
-  width: 20vw;
+  width: 150px;
   background: #ddffff;
 }
 
