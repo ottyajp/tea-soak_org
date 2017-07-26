@@ -4,13 +4,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
+    <script lang="text/javascript">
+      function on(id) {
+        const ele = document.getElementById(id);
+        ele.classList.add('label_show');
+      }
+      function off(id) {
+        const ele = document.getElementById(id);
+        ele.classList.remove('label_show');
+      }
+    </script>
     <title>おちゃづけ</title>
   </head>
   <body>
     <div class="container"><center>
       <div class="box">
         <a href="https://twitter.com/ottyajp">
-          <img src="./icon/twitter.svg" class="icon">
+          <img src="./icon/twitter.svg" class="icon" onmouseover="on('twitter')" onmouseout="off('twitter')">
+          <span class="label label_show" id="twitter">Twitter</span>
         </a>
       </div>
       <div class="box">

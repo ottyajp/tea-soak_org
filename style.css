@@ -32,3 +32,12 @@ footer {
   font-family: 'Oxygen Mono', monospace;
 }
 
+.label {
+  display: none;
+  transition: 0.5s;
+}
+
+.label_show {
+  display: block;
+}
+
