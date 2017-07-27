@@ -16,10 +16,10 @@ div.container {
 }
 
 .box:nth-child(odd) {
-  margin-right: 100px;
+  margin-left: 150px;
 }
 .box:nth-child(even) {
-  margin-left: 100px;
+  margin-right: 150px;
 }
 
 .box:hover {
