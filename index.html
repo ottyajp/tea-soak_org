@@ -9,10 +9,12 @@
       function on(id) {
         const ele = document.getElementById(id);
         ele.classList.add('label_show');
+        ele.classList.add(id);
       }
       function off(id) {
         const ele = document.getElementById(id);
         ele.classList.remove('label_show');
+        ele.classList.remove(id);
       }
     </script>
     <title>おちゃづけ</title>
