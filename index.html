@@ -10,33 +10,36 @@
         const ele = document.getElementById(id);
         ele.classList.add('label_show');
         ele.classList.add(id);
+        const left = document.getElementById('box_'+id).getBoundingClientRect().left-230;
+        ele.style.left = `${left}px`;
       }
       function off(id) {
         const ele = document.getElementById(id);
         ele.classList.remove('label_show');
         ele.classList.remove(id);
+        ele.style.left = '';
       }
     </script>
     <title>おちゃづけ</title>
   </head>
   <body>
     <div class="container"><center>
-      <div class="box">
+      <div class="box" id="box_twitter">
         <a href="https://twitter.com/ottyajp">
           <img src="./icon/twitter.svg" class="icon" onmouseover="on('twitter')" onmouseout="off('twitter')">
         </a>
       </div>
-      <div class="box">
+      <div class="box" id="box_github">
         <a href="https://github.com/ottyajp">
           <img src="./icon/github.svg" class="icon" onmouseover="on('github')" onmouseout="off('github')">
         </a>
       </div>
-      <div class="box">
+      <div class="box" id="box_wordpress">
         <a href="https://blog.tea-soak.org/">
           <img src="./icon/wordpress.svg" class="icon" onmouseover="on('wordpress')" onmouseout="off('wordpress')">
         </a>
       </div>
-      <div class="box">
+      <div class="box" id="box_amazon">
         <a href="https://www.amazon.co.jp/gp/registry/wishlist/3OJYDNBMWU4HD">
           <img src="./icon/amazon.svg" class="icon" onmouseover="on('amazon')" onmouseout="off('amazon')">
         </a>
